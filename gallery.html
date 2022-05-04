@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <link rel="stylesheet" href="./style1.css" />
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+  </head>
+  <style>
+    body {
+      background-image: url("./images/pic-1.jpg");
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      background-size: cover;
+    }
+    p {
+      font-family: Snell Roundhand, cursive;
+    }
+    h1 {
+      font-family: Snell Roundhand, cursive;
+    }
+  </style>
+  <body>
+    <button onclick="location.href='index.html'">BACK TO HOME PAGE</button>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0-1/css/all.css"
+    />
+    <h1>Gallery</h1>
+    <div id="fullscreen-display" class="fullscreen-dispay-hide">
+      <img style="width: 90%" src="" />
+      <i
+        class="fas fa-times"
+        style="display: none"
+        onclick="ImageGallery.toggleFullscreenImage()"
+      ></i>
+    </div>
+
+    <div class="container">
+      <div id="first" class="gallery-container">
+        <div class="imageSlide" style="display: block">
+          <div class="numbertext">1 / 5</div>
+          <div
+            class="fullscreen-btn"
+            onclick="ImageGallery.toggleFullscreenImage('./images/x.jpeg')"
+            src="./images/x.jpeg')"
+          >
+            <i class="fas fa-expand"></i>
+          </div>
+          <img
+            class="imgSlide"
+            onclick="ImageGallery.toggleFullscreenImage('./images/x.jpeg')"
+            src="./images/x.jpeg"
+            style="width: 100%"
+            alt=" tail.next = newNode; "
+          />
+          <div class="caption-container">
+            <p id="caption">Harold Parker State Forest</p>
+          </div>
+        </div>
+
+        <div class="imageSlide" style="display: none">
+          <div class="numbertext">2 / 5</div>
+          <div
+            class="fullscreen-btn"
+            onclick="ImageGallery.toggleFullscreenImage('./images/z.jpeg')"
+          >
+            <i class="fas fa-expand"></i>
+          </div>
+          <img
+            class="imgSlide"
+            onclick="ImageGallery.toggleFullscreenImage('./images/z.jpeg')"
+            src="./images/z.jpeg"
+            style="width: 100%"
+            alt=" newNode.previous = tail;"
+          />
+          <div class="caption-container">
+            <p id="caption">Worcester</p>
+          </div>
+        </div>
+
+        <div class="imageSlide" style="display: none">
+          <div class="numbertext">3 / 5</div>
+          <div
+            class="fullscreen-btn"
+            onclick="ImageGallery.toggleFullscreenImage('./images/xx.jpeg')"
+          >
+            <i class="fas fa-expand"></i>
+          </div>
+          <img
+            class="imgSlide"
+            onclick="ImageGallery.toggleFullscreenImage('./images/xx.jpeg')"
+            src="./images/xx.jpeg"
+            style="width: 100%"
+            alt=" tail = newNode; size++;"
+          />
+          <div class="caption-container">
+            <p id="caption">The Leonard P. Zakim Bunker Hill Bridge</p>
+          </div>
+        </div>
+
+        <div class="imageSlide" style="display: none">
+          <div class="numbertext">4 / 5</div>
+          <div
+            class="fullscreen-btn"
+            onclick="ImageGallery.toggleFullscreenImage('./images/z.jpeg')"
+          >
+            <i class="fas fa-expand"></i>
+          </div>
+          <img
+            class="imgSlide"
+            onclick="ImageGallery.toggleFullscreenImage('./images/zz.jpeg')"
+            src="./images/zz.jpeg"
+            style="width: 100%"
+            alt=" newNode.previous = tail;"
+          />
+          <div class="caption-container">
+            <p id="caption">Ray and Maria Stata Center</p>
+          </div>
+        </div>
+
+        <div class="imageSlide" style="display: none">
+          <div class="numbertext">5 / 5</div>
+          <div
+            class="fullscreen-btn"
+            onclick="ImageGallery.toggleFullscreenImage('./images/yy.jpeg')"
+          >
+            <i class="fas fa-expand"></i>
+          </div>
+          <img
+            class="imgSlide"
+            onclick="ImageGallery.toggleFullscreenImage('./images/yy.jpeg')"
+            src="./images/yy.jpeg"
+            style="width: 100%"
+            alt=" tail = newNode; size++;"
+          />
+          <div class="caption-container">
+            <p id="caption">Downtown Lowell</p>
+          </div>
+        </div>
+        <a class="prev">❮</a>
+        <a class="next">❯</a>
+      </div>
+    </div>
+    <a class="prev">❮</a>
+        <a class="next">❯</a>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
